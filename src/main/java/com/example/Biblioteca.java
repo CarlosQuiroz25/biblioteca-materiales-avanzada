@@ -26,8 +26,6 @@ class Biblioteca {
 
     public void mostrarCatalogo() {
         for (Material material : materiales) {
-            material.mostrarInformacion();
-            System.out.println("-----------------------");
             if (material instanceof Libro) {
                 ((Libro) material).mostrarDetallesLibro();
             } else if (material instanceof Revista) {
